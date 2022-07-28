@@ -1,0 +1,22 @@
+- name: My test ability
+  description: My description
+  tactic: discovery
+  technique_id: T2000.01
+  technique_name: 'Account Discovery: Domain Account'
+  executors:
+  - payloads: []
+    platform: darwin
+    name: sh
+    cleanup:
+    - ifconfig -a
+    parsers: []
+    command: whoami
+  repeatable: false
+  additional_info: {}
+  privilege: ''
+  singleton: true
+  buckets: []
+  requirements: []
+  access: {}
+  cleanup: []
+  id: 4a40e448-7a28-45d8-a696-04f34df31764
